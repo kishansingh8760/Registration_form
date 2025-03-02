@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="registrationStyle.css">
+    <script src="registrationScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <h3>Registration</h3>
+        <form action="#" class="box" onsubmit="return checkPassword()" method="post">
+            <div>
+                <label for="FIRST NAME">First name</label> <br>
+            <INPUt type="text" placeholder="Enter first name" required></INPUt> <br>
+            </div>
+
+           <div>
+            <label for="LAST NAME"> Last name</label> <br>
+            <Input type="text" placeholder="Enter last name" required></Input> <br>
+           </div>
+
+           <div>
+            <label for="EMAIL"> Email</label> <br>
+            <input type="email" placeholder="Enter your email" required> <br>
+           </div>
+
+          <div>
+            <label for="PHONE NO">Phone number</label> <br>
+            <input type="text" placeholder="Enter your phone no" required minlength="10"> <br> 
+          </div>
+
+           <div>
+            <Label for="PASSWORD">Password</Label> <br>
+           <input type="password" placeholder="Enter your password" required  id="password"> <br>
+           </div>
+
+           <div>
+            <Label for=" CONFIRM PASSWORD"> Confirm password </Label> <br>
+           <input type="password"placeholder="Confirm your password" required id="confirmPassword"> <br>
+           </div>
+
+          <div id="box1">
+            <label for="GENDER">GENDER</label> 
+          </div> <br>
+          <div id="box2">
+            <input type="radio"  name="GENDER"> Male  
+            <input type="radio" name="GENDER"> Female
+            <input type="radio" name="GENDER"> prefer not to say
+          </div> <br>
+           <button type="submit" id="button" >Register</button> 
+        </form>
+    </div>
+    <!-- <a href="newpage.html">Register</a> -->
+    
+</body>
+</html>
